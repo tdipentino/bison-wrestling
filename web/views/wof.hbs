@@ -1,0 +1,257 @@
+{{> header }} {{> nav }}
+
+<div class="container" style="text-align: center;">
+  <div class="container">
+    <h1 class="mainH1">WALL OF FAME!</h1>
+    <h4 class="mainH4">***Wall of Fame stats are Varsity stats only. JV stats don't count towards Wall of Fame***</h4>
+  </div>
+</div>
+
+<div class="container">
+  <hr class="style13">
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="tableH" style="text-align:center;">SCHOOL RECORDS</div>
+      <table class="TFtable">
+        <tr style="height: 35px !important;">
+          <th style="width:40%">Team Record</th>
+          <th style="width:20%">Year</th>
+          <th style="width:40%">Record</th>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Highest Tournament Score</td>
+          <td>2017</td>
+          <td>201 PTS - 2nd Annual Bison Invitational</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Consecutive Wins</td>
+          <td>2018</td>
+          <td>5</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Best Dual Score</td>
+          <td>2017 &amp; 2018</td>
+          <td>66 PTS - 01/17/2017 vs Gateway HS &amp; 01/18/2018 vs Hinkley HS</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Best Dual Record</td>
+          <td>2018</td>
+          <td>9-5</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Most League Placers</td>
+          <td>2016</td>
+          <td>6</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh" rowspan="2">Most Regional Placers</td>
+          <td>2016</td>
+          <td>6</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td>2017</td>
+          <td>6</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Most State Qualifiers</td>
+          <td>2018</td>
+          <td>4 - Tony Lozano 126lbs, Tristan Curtis 138lbs, Jayden Smith 195lbs, &amp; Dechlyn Miller 220lbs</td>
+        </tr>
+      </table>
+      <table class="TFtable">
+        <tr style="height: 35px !important;">
+          <th style="width:40%">Individual Record</th>
+          <th style="width:30%">Name</th>
+          <th style="width:15%">Year</th>
+          <th style="width:15%">Record</th>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Four Year (W-L)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Three Year (W-L)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Two Year (W-L)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">One Year (W-L)</td>
+          <td>Jayden Smith</td>
+          <td>2017</td>
+          <td>34-9</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Most Pins (Season)</td>
+          <td>Marcus Guerra &amp; Jayden Smith</td>
+          <td>2016 &amp; 2017</td>
+          <td>20</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Most Takedowns (Season)</td>
+          <td>Marcus Guerra</td>
+          <td>2016</td>
+          <td>88</td>
+        </tr>
+        <tr style="height: 35px !important;">
+          <td class="recordsTh">Most Reversals (Season)</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <div class="tableHpad" style="text-align:center;">STATE PLACERS</div>
+      <table class="TFtable">
+        <tr>
+          <th style="width:15%">Year</th>
+          <th style="width:15%">Placement</th>
+          <th style="width:35%">Name</th>
+          <th style="width:20%">Weight</th>
+          <th style="width:15%">Grade</th>
+        </tr>
+        {{#each components.bisonState.bison-states}}
+          <tr>
+            <td>{{stateYear}}</td>
+            <td>{{placement}}</td>
+            <td>{{firstname}} {{lastname}}</td>
+            <td>{{weight}} lbs.</td>
+            <td>{{grade}}</td>
+          </tr>
+        {{/each}}
+      </table>
+
+      <div class="tableHpad" style="text-align:center;">STATE QUALIFIERS</div>
+      <table class="TFtable">
+        <tr>
+          <th style="width:15%">Year</th>
+          <th style="width:15%">Placement</th>
+          <th style="width:35%">Name</th>
+          <th style="width:20%">Weight</th>
+          <th style="width:15%">Grade</th>
+        </tr>
+        {{#each components.bisonQualifiers.bison-qualifiers}}
+          <tr>
+            <td>{{qualYear}}</td>
+            <td>{{placement}}</td>
+            <td>{{firstname}} {{lastname}}</td>
+            <td>{{weight}} lbs.</td>
+            <td>{{grade}}</td>
+          </tr>
+        {{/each}}
+      </table>
+
+      <div class="tableHpad" style="text-align:center;">REGIONAL PLACERS</div>
+      <table class="TFtable">
+        <tr>
+          <th style="width:10%">Year</th>
+          <th style="width:20%">Region</th>
+          <th style="width:15%">Placement</th>
+          <th style="width:25%">Name</th>
+          <th style="width:15%">Weight</th>
+          <th style="width:25%">Grade</th>
+        </tr>
+        {{#each components.bisonRegionals.bison-regionals}}
+          <tr>
+            <td>{{regionalYear}}</td>
+            <td>{{regional-name}}</td>
+            <td>{{placement}}</td>
+            <td>{{firstname}} {{lastname}}</td>
+            <td>{{weight}} lbs.</td>
+            <td>{{grade}}</td>
+          </tr>
+        {{/each}}
+      </table>
+
+      <div class="tableHpad" style="text-align:center;">LEAGUE PLACERS</div>
+      <table class="TFtable">
+        <tr>
+          <th style="width:10%">Year</th>
+          <th style="width:15%">Legue</th>
+          <th style="width:25%">Placement</th>
+          <th style="width:25%">Name</th>
+          <th style="width:10%">Weight</th>
+          <th style="width:25%">Grade</th>
+        </tr>
+        {{#each components.bisonLeague.bison-leagues}}
+          <tr>
+            <td>{{leagueYear}}</td>
+            <td>{{league-name}}</td>
+            <td>{{placement}}</td>
+            <td>{{firstname}} {{lastname}}</td>
+            <td>{{weight}} lbs.</td>
+            <td>{{grade}}</td>
+          </tr>
+        {{/each}}
+      </table>
+
+      <div class="tableHpad" style="text-align:center;">CENTURY CLUB</div>
+      <table class="TFtable">
+        <tr>
+          <th style="width:60%">Name</th>
+          <th style="width:40%">Legue</th>
+        </tr>
+        {{#each components.centuryClub.century-clubs}}
+          <tr>
+            <td>{{firstname}} {{lastname}}</td>
+            <td>{{wins}}</td>
+          </tr>
+        {{/each}}
+      </table>
+
+      <div class="tableHpad" style="text-align:center;">50+ TAKEDOWN CLUB</div>
+      <table class="TFtable">
+        <tr>
+          <th style="width:15%">Total</th>
+          <th style="width:35%">Name</th>
+          <th style="width:20%">Weight</th>
+          <th style="width:15%">Year</th>
+          <th style="width:15%">Grade</th>
+        </tr>
+        {{#each components.takedownClub.takedown-clubs}}
+          <tr>
+            <td>{{takedowns}}</td>
+            <td>{{firstname}} {{lastname}}</td>
+            <td>{{weight}} lbs.</td>
+            <td>{{takedownYear}}</td>
+            <td>{{grade}}</td>
+          </tr>
+        {{/each}}
+      </table>
+
+      <div class="tableHpad" style="text-align:center;">15+ PIN CLUB</div>
+      <table class="TFtable">
+        <tr>
+          <th style="width:15%">Total</th>
+          <th style="width:35%">Name</th>
+          <th style="width:20%">Weight</th>
+          <th style="width:15%">Year</th>
+          <th style="width:15%">Grade</th>
+        </tr>
+        {{#each components.pinClub.pin-clubs}}
+          <tr>
+            <td>{{pins}}</td>
+            <td>{{firstname}} {{lastname}}</td>
+            <td>{{weight}} lbs.</td>
+            <td>{{pinYear}}</td>
+            <td>{{grade}}</td>
+          </tr>
+        {{/each}}
+      </table>
+
+    </div>
+  </div>
+</div>
+
+{{> footer }}

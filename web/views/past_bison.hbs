@@ -1,0 +1,1594 @@
+{{> header }}
+{{> nav }}
+
+<div class="container" style="text-align: center;">
+   <h1 class="mainH1">PAST BISON</h1>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">106 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "106")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">113 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "113")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">120 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "120")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">126 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "126")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">132 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "132")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">138 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "138")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">145 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "145")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">152 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "152")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">160 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "160")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">170 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "170")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">182 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "182")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">195 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "195")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">220 lbs.</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "220")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">Heavy Weight</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "HWT")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;" id="{{lastname}}">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">
+               {{#if (eq is_jv 1)}}
+               {{#and is_varsity is_jv}}Varisty - JV{{else}}JV{{/and}}
+               {{else}}
+               Varsity
+               {{/if}}
+            </div>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      <!-- The Modal -->
+      <div class="modal fade bd-modal-lg" id="{{firstname}}{{lastname}}" tabindex="-1" role="dialog" aria-labelledby="{{firstname}}{{lastname}}" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+               <!-- Modal Header -->
+               <div class="modal-header">
+                  <h2 class="mainH2 modal-title" id="{{firstname}}{{lastname}}">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}} {{firstname}} {{lastname}} - {{grade}}th Grade</h2>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <!-- Modal body -->
+               <div class="modal-body">
+                  <p><img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" /></p>
+                  <h3 class="modal-title" style="color: #0c1c3c;">{{title}}</h3>
+                  <hr class="style13">
+                  <div class="tableH" style="text-align:center;">{{year}} {{#if (eq is_varsity 1)}}VARSITY STATS{{/if}}</div>
+                  <table class="TFtable" style="width:70%;text-align;center;margin: 0 auto;">
+                     <tr style="height: 35px !important;">
+                        <th style="width:60%">Category</th>
+                        <th style="width:40%">Stat</th>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Match Points</td>
+                        <td>{{match_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Team Points</td>
+                        <td>{{team_points}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Wins</td>
+                        <td>{{wins}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Loses</td>
+                        <td>{{loses}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Falls</td>
+                        <td>{{fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Decisions</td>
+                        <td>{{decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Major Decisions</td>
+                        <td>{{major_decision}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Forfeits</td>
+                        <td>{{forfeit}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Tech Falls</td>
+                        <td>{{tech_fall}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Takedowns</td>
+                        <td>{{take_down}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 2</td>
+                        <td>{{near_fall_2}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Near Fall 3</td>
+                        <td>{{near_fall_3}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Escapes</td>
+                        <td>{{e1}}</td>
+                     </tr>
+                     <tr style="height: 35px !important;">
+                        <td class="recordsTh">Reversals</td>
+                        <td>{{reversal}}</td>
+                     </tr>
+                  </table>
+               </div>
+               <!-- Modal footer -->
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+   <div class="mainH2" style="text-align:center; box-shadow: 5px 5px 0px #a9a9a9;	margin-bottom:10px; border: #0c1c3c 1px solid;">Managers</div>
+   <div class="row">
+      {{#each components.bison}}
+      {{#if (eq weight "MNG")}}
+      <div class="col-md-4" style="display:flex;justify-content:center;align-items:center;">
+         <div class="grid mask">
+            <p>
+               <a href="#{{firstname}}{{lastname}}" data-toggle="modal" data-target="#{{firstname}}{{lastname}}">
+               <img class="img-responsive" src="{{img_dir}}" alt="{{firstname}} {{lastname}}" style="width:100%; height:100%;" />
+               </a>
+            </p>
+            <div class="mainH4">{{#if (eq is_captain "1")}}<img src="img/captain.png" alt="Captain" /> {{/if}}{{firstname}} {{lastname}}</div>
+            <br>
+         </div>
+      </div>
+      {{/if}}
+      {{/each}}
+   </div>
+</div>
+
+{{> footer }}

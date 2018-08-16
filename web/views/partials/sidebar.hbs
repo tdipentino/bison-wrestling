@@ -1,0 +1,108 @@
+<div class="sidebar" style="background-color:#fff;">
+	<h1 class="sidebarH1">Follow Us:</h1>
+	<a href="https://twitter.com/Bison_wrestling" target="_blank"><img src="img/twitter.png" alt="Twitter" /></a>
+	<a href="https://www.facebook.com/VPBisonWrestling" target="_blank"><img src="img/facebook.png" alt="Facebook" /></a>
+	<a href="https://www.flickr.com/photos/147940845@N03/" target="_blank"><img src="img/flickr.png" alt="Flickr" /></a>
+</div>
+<hr class="style13">
+<div class="sidebar" style="background-color:">
+	<h1 class="sidebarH1">Social Media</h1>
+	<div class="widget--facebook--container">
+		<div class="widget-facebook">
+			<iframe id="facebook_iframe" class="facebook_iframe"></iframe>
+		</div>
+	</div>
+</div>
+<hr class="style13">
+<div class="sidebar">
+	<a class="twitter-timeline" data-width="100%" data-height="400" data-theme="dark" href="//twitter.com/Bison_wrestling?ref_src=twsrc%5Etfw" style="border-color:#000;">Tweeter - Vista PEAK Wrestling</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+<hr class="style13">
+<h1 class="sidebarH1">EXTERNAL LINKS</h1>
+<div class="sidebar" style="background-color:#fff;">
+	<a href="http://vistapeakathletics.com/" target="_blank" class="list-group-item">Vista Peak Athletics</a>
+	<a href="http://www.milehighwrestlingclub.com/" target="_blank" class="list-group-item">Mile High Wrestling Club</a>
+	<a href="http://www.pikespeakwrestling.com/" target="_blank" class="list-group-item">Pikes Peak Wrestling League</a>
+	<a href="http://www.rmnevents.com/" target="_blank" class="list-group-item">Rocky Mountain Nationals</a>
+	<a href="http://s200.trackwrestling.com/tw/TWHome.jsp?loadBalanced=true" target="_blank" class="list-group-item">Track Wrestling</a>
+	<a href="https://www.hudl.com/" target="_blank" class="list-group-item">Hudl</a>
+	<a href="http://www.teamusa.org/USA-Wrestling" target="_blank" class="list-group-item">USA Wrestling</a>
+</div>
+<hr class="style13">
+<h1 class="sidebarH1">SPONSORS</h1>
+<div class="sidebar" style="background-color:#fff;">
+	<a href="https://www.google.com/url?q=https%3A%2F%2Fwww.pacificoffice.com%2Fcontact%2Fdenver-co-pacific-office-automation&sa=D&sntz=1&usg=AFQjCNHRfR_XMQJn-Loiz35rkEeBRg1oxA" target="_blank" class="list-group-item">Pacific Office Automation</a>
+	<a href="" class="list-group-item">Cady Plumbing Co</a>
+	<a href="" class="list-group-item">Blue Stem Horse Boarding LLC</a>
+	<a href="" class="list-group-item">Daniel &amp; Bailey Benedict</a>
+	<a href="" class="list-group-item">Chris Meier</a>
+	<a href="" class="list-group-item">Lawrence Renas</a>
+	<a href="" class="list-group-item">Daniel Iwatsu</a>
+	<a href="" class="list-group-item">Molly Oliver</a>
+	<a href="" class="list-group-item">Jesus Lozano</a>
+</div>
+<script>
+/* Vanilla JS */
+/* If you know how to improve the code, here is my email: alexandr.kazakov1@gmail.com */
+function setupFBframe(frame) {
+var container = frame.parentNode;
+
+var containerWidth = container.offsetWidth;
+var containerHeight = container.offsetHeight;
+
+var src =
+	"https://www.facebook.com/plugins/page.php" +
+	"?href=https://www.facebook.com/VPBisonWrestling/?ref=bookmarks" +
+	"&tabs=timeline" +
+	"&width=" +
+	containerWidth +
+	"&height=" +
+	containerHeight +
+	"&small_header=false" +
+	"&adapt_container_width=false" +
+	"&hide_cover=false" +
+	"&hide_cta=true" +
+	"&show_facepile=true" +
+	"&appId";
+
+frame.width = containerWidth;
+frame.height = containerHeight;
+frame.src = src;
+}
+
+/* begin Document Ready
+############################################ */
+
+document.addEventListener('DOMContentLoaded', function() {
+var facebookIframe = document.querySelector('#facebook_iframe');
+setupFBframe(facebookIframe);
+
+/* begin Window Resize
+############################################ */
+
+// Why resizeThrottler? See more : https://developer.mozilla.org/ru/docs/Web/Events/resize
+(function() {
+	window.addEventListener("resize", resizeThrottler, false);
+
+	var resizeTimeout;
+
+	function resizeThrottler() {
+		if (!resizeTimeout) {
+			resizeTimeout = setTimeout(function() {
+				resizeTimeout = null;
+				actualResizeHandler();
+			}, 66);
+		}
+	}
+
+	function actualResizeHandler() {
+		document.querySelector('#facebook_iframe').removeAttribute('src');
+		setupFBframe(facebookIframe);
+	}
+})();
+/* end Window Resize
+############################################ */
+});
+/* end Document Ready
+############################################ */
+</script>
