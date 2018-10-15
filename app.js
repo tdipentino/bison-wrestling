@@ -13,6 +13,7 @@ server.on('started', function () {
 });
 
 server.getMiddleware().getRendererEngine('hbs').registerPartials('web/views/partials');
+server.getMiddleware().getRendererEngine('hbs').registerPartials('web/views/email');
 server.getMiddleware().getRendererEngine('hbs').registerHelper(helpers);
 
 // start the server

@@ -1,7 +1,7 @@
 {
     "name": "bison-wrestling",
     "description": "Vista Peak Wrestling Website",
-    "version": "2.0.1",
+    "version": "2.0.10",
     "author": "Tony DiPentino",
     "license": "",
     "framework": "none",
@@ -18,7 +18,10 @@
         "nodehandler-base64": "^1.0.0",
         "nodehandler-dot": "^1.0.0",
         "nodehandler-json": "^1.0.0",
-        "handlebars-helpers": "^0.10.0"
+        "handlebars-helpers": "^0.10.0",
+        "nodemailer": "2.7.2",
+        "nodemailer-smtp-transport": "2.7.4",
+        "nodemailer-express-handlebars": "^*"
     },
     "devDependencies": {
         "istanbul": "^0.4.1",

@@ -1,30 +1,144 @@
-<!-- ==== Contact ==== -->
-<div class="container" name="contact">
-  <div class="row">
-    <br>
-    <h1 class="centered">THANKS FOR VISITING US</h1>
-    <hr>
-    <div class="col-lg-6">
-      <h3>Contact Information</h3>
-      <p><span class="glyphicon glyphicon-home"></span>: 24500 E 6th Ave Aurora, CO 80018
-        <br/>
-        <span class="glyphicon glyphicon-phone"></span>: +1 303-340-0121
-        <br/>
-        <span class="glyphicon glyphicon-envelope"></span>: <a href="mailto:dabenedict@aps.k12.co.us">dabenedict@aps.k12.co.us</a>
-        <br/>
-      </p>
-    </div>
-    
-    <!-- col -->
-    <div class="col-lg-6">
-      <h3>Support Us</h3>
-      <p>Thank You to all of the parents, families, friends, teachers, staff, and community partners that have helped make this 2016-2017 Wrestling Season a success for all of our
-        participating schools. Your support is what makes a program great. Good Luck at State for those who Qualify!
-        <br /> - Coach Benedict
-      </p>
-    </div>
-    <!-- col -->
-  </div>
-  <!-- row -->
+{{> header }} {{> nav }}
+
+<div class="center">
+	<h1 class="counterH1">#STAMPEDETOSTATE!</h1>
+	<div class="center" id="stampedeToState"></div>
 </div>
-<!-- container -->
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-9">
+			<hr class="style13">
+			<div class="row">
+				<div class="col-lg-12 center">
+					<h1 class="mainH1">CONTACT US</h1>
+				</div>
+			</div>
+
+			<hr class="style13">
+			<br>
+
+      <div class="row">
+				<div class="col-md-12">
+          <h3 class="mainH3outline">Thanks for Visiting Us!</h3><br>
+          <h3>Contact Information</h3>
+          <p><span class="oi oi-home" style="font-size:20px;"> : 24500 E 6th Ave Aurora, CO 80018</span>
+            <br/>
+            <span class="oi oi-phone" style="font-size:20px;"> : +1 303-817-9482</span>
+            <br/>
+            <span class="oi oi-envelope-closed" style="font-size:20px;"> : <a href="mailto:dabenedict@auroraK12.org">dabenedict@auroraK12.org</a></span>
+            <br/>
+          </p>
+				</div>
+			</div>
+
+      <br>
+      <hr class="style13">
+      <br>
+
+      <div class="row">
+				<div class="col-md-12">
+          <h3 class="mainH3outline">Support Us</h3><br>
+          <p>Thank You to all of the parents, families, friends, teachers, staff, and community partners that have helped make this 2018-2019 Wrestling Season a success for all of our
+            participating schools. Your support is what makes a program great. Good Luck at State for those who Qualify!
+            <br /> - Coach Benedict
+          </p>
+				</div>
+			</div>
+
+			<br>
+			<hr class="style13">
+			<br>
+
+
+			<div class="row">
+				<div class="col-md-12">
+					<form class="contact100-form validate-form">
+						<h3 class="mainH3outline">Send Us A Message?</h3><br><br>
+
+						<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+							<span class="label-input100">FULL NAME *</span>
+							<input class="input100" type="text" name="name" placeholder="Enter Your Name">
+						</div>
+
+						<div class="wrap-input100 validate-input bg1 rs1-wrap-input100" data-validate = "Enter Your Email (e@a.x)">
+							<span class="label-input100">Email *</span>
+							<input class="input100" type="text" name="email" placeholder="Enter Your Email ">
+						</div>
+
+						<div class="wrap-input100 bg1 rs1-wrap-input100">
+							<span class="label-input100">Phone</span>
+							<input class="input100" type="text" name="phone" placeholder="Enter Number Phone">
+						</div>
+
+						<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Please Type Your Message">
+							<span class="label-input100">Message</span>
+							<textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+						</div>
+
+						<div class="container-contact100-form-btn">
+							<button class="contact100-form-btn">
+								<span>
+									Submit
+									<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+				</div>
+
+				<br>
+				<hr class="style13">
+				<br>
+
+
+		</div>
+		<div class="col-lg-3">
+
+			{{> sidebar }}
+
+		</div>
+	</div>
+</div>
+
+{{> footer }}
+{{> js_footer }}
+
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+
+	<script src="js/main.js"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+{{> html_close }}
