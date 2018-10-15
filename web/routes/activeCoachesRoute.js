@@ -15,7 +15,6 @@ var activeCoachesRoute = Arrow.Router.extend({
             if (err) {
                 next(err);
             } else {
-								var components = {};
                 var data = {
                     meta: {
                         title: 'Vista PEAK 2017 - 2018 Bison Coaches',

@@ -16,7 +16,6 @@ var activeBisonRoute = Arrow.Router.extend({
             if (err) {
                 next(err);
             } else {
-                var components = {};
                 var data = {
                     meta: {
                         title: 'Vista PEAK - Bison Wrestlers',
