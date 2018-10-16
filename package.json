@@ -21,7 +21,8 @@
         "handlebars-helpers": "^0.10.0",
         "nodemailer": "2.7.2",
         "nodemailer-smtp-transport": "2.7.4",
-        "nodemailer-express-handlebars": "^*"
+        "nodemailer-express-handlebars": "^*",
+        "nodemailer-sendgrid-transport": "^*"
     },
     "devDependencies": {
         "istanbul": "^0.4.1",
