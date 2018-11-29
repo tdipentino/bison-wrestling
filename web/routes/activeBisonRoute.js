@@ -10,7 +10,7 @@ var activeBisonRoute = Arrow.Router.extend({
 			where: {
 				"is_active": 1
 			},
-			order: "weight,weight_rank",
+			order: "weight,-grade,-lastname",
 			per_page: "100",
 		}, function(err, results) {
 			if (err) {

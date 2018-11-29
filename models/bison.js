@@ -33,6 +33,11 @@ var Model = Arrow.createModel('bison', {
         "year": {
             "type": "number",
             "default": "2019"
+        },
+        "program_years": {
+            "type": "string",
+            "default": "R",
+            "required": true
         }
     },
     "connector": "appc.arrowdb",
