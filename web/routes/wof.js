@@ -8,13 +8,6 @@ var WOFRoute = Arrow.Router.extend({
    action: function(req, resp, next) {
 
       async.parallel({
-
-         bisonState: function(callback) {
-            req.server.getAPI('api/bison-state/query', 'GET').execute({
-               order: "-stateYear,weight",
-               per_page: "100"
-            }, callback);
-         },
          bisonQualifiers: function(callback) {
             req.server.getAPI('api/bison-qualifiers/query', 'GET').execute({
                order: "-qualYear,weight",
@@ -47,7 +40,7 @@ var WOFRoute = Arrow.Router.extend({
          },
          pinClub: function(callback) {
             req.server.getAPI('api/pin-club/query', 'GET').execute({
-               order: "-pins,pinYear",
+               order: "-pins,-pinYear",
                per_page: "100"
             }, callback);
          }
