@@ -1,7 +1,7 @@
 {
     "name": "bison-wrestling",
     "description": "Vista Peak Wrestling Website",
-    "version": "2.0.38",
+    "version": "2.0.43",
     "author": "Tony DiPentino",
     "license": "",
     "framework": "none",
@@ -14,23 +14,23 @@
     "dependencies": {
         "async": "~2.6.0",
         "dateformat": "3.0.3",
-        "lodash": "^4.17.5",
-        "pkginfo": "^0.3.1",
+        "handlebars-helpers": "^0.10.0",
+        "lodash": "^4.17.15",
         "nodehandler-base64": "^1.0.0",
         "nodehandler-dot": "^1.0.0",
         "nodehandler-json": "^1.0.0",
-        "handlebars-helpers": "^0.10.0",
         "nodemailer": "4.6.8",
-        "nodemailer-smtp-transport": "2.7.4",
         "nodemailer-express-handlebars": "3.0.0",
-        "nodemailer-sendgrid-transport": "0.2.0"
+        "nodemailer-sendgrid-transport": "0.2.0",
+        "nodemailer-smtp-transport": "2.7.4",
+        "pkginfo": "^0.3.1"
     },
     "devDependencies": {
-        "istanbul": "^0.4.1",
-        "mocha": "^2.3.4",
-        "should": "^8.0.2",
         "arrow": "^*",
-        "request": "^2.81.0"
+        "istanbul": "^0.4.1",
+        "mocha": "^6.2.2",
+        "request": "^2.81.0",
+        "should": "^8.0.2"
     },
     "main": "app.js",
     "healthCheck": true,
