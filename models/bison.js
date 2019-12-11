@@ -21,7 +21,7 @@ var Model = Arrow.createModel('bison', {
         },
         "img_dir": {
             "type": "string",
-            "default": "//lh3.googleusercontent.com/SAx6ywdmNbbGs9vvhDeHrcabgOM5S22QiZuCpYfFHQAVnGQvr7AbwW8mo1otTUxMaFajguMyZ4xgA3w43INvSGIaFfH-J8TJ_bVricR0HRyVoei7ahjSvz3o-gDlydc87F8-2DuElA"
+            "default": "N"
         },
         "weight": {
             "type": "string"
@@ -32,7 +32,7 @@ var Model = Arrow.createModel('bison', {
         },
         "year": {
             "type": "number",
-            "default": "2019"
+            "default": "2020"
         },
         "program_years": {
             "type": "string",
